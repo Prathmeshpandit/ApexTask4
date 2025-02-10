@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Listing</h1>
+
+        <!-- Filters -->
+        <div class="filters">
+            <div>
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="furniture">Furniture</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="price">Price Range</label>
+                <select id="price">
+                    <option value="all">All</option>
+                    <option value="low">Low (₹0 - ₹50)</option>
+                    <option value="medium">Medium (₹50 - ₹150)</option>
+                    <option value="high">High (₹150+)</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="sort">Sort By</label>
+                <select id="sort">
+                    <option value="rating">Rating</option>
+                    <option value="price">Price</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product List -->
+        <div class="product-list">
+            <!-- Products will be injected here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
